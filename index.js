@@ -16,6 +16,9 @@ class Stack {
   peek() {
     return this.stack[this.stack.length - 1];
   }
+  size() {
+    return this.stack.length;
+  }
   //mostramos el resultado
   print() {
     console.log(this.stack);
@@ -27,6 +30,7 @@ stack.push(2);
 console.log("push", stack.push(3));
 console.log("pop", stack.pop());
 console.log("peek", stack.peek());
+console.log("size", stack.size());
 stack.print();
 
 //con un objecto.
